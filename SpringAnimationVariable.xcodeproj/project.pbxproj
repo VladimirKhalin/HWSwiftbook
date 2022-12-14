@@ -63,7 +63,7 @@
 				1287E3572949CE8800021A84 /* Models */,
 				1287E3512949BF7D00021A84 /* Delegates */,
 				1287E3522949BF8B00021A84 /* ViewControllers */,
-				1287E3532949BFA300021A84 /* SStoryboars */,
+				1287E3532949BFA300021A84 /* Storyboars */,
 				1287E3462949BE9B00021A84 /* Assets.xcassets */,
 				1287E34B2949BE9B00021A84 /* Info.plist */,
 			);
@@ -87,13 +87,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		1287E3532949BFA300021A84 /* SStoryboars */ = {
+		1287E3532949BFA300021A84 /* Storyboars */ = {
 			isa = PBXGroup;
 			children = (
 				1287E3432949BE9900021A84 /* Main.storyboard */,
 				1287E3482949BE9B00021A84 /* LaunchScreen.storyboard */,
 			);
-			path = SStoryboars;
+			path = Storyboars;
 			sourceTree = "<group>";
 		};
 		1287E3572949CE8800021A84 /* Models */ = {
