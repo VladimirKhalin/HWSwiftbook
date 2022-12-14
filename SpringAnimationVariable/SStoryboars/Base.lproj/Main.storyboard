@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpringAnimationVariable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEj-Iy-RTH" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="70" y="762" width="274" height="50"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RIe-wv-fA5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="RUN"/>
+                                <connections>
+                                    <action selector="startAnimationButtonPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQB-Ea-5ch"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qua-h7-jhJ" customClass="SpringImageView" customModule="SpringAnimation">
+                                <rect key="frame" x="73.5" y="98" width="267" height="134.5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-0d-y0E">
+                                <rect key="frame" x="93.5" y="108" width="200" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preset:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-Ey-daE" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbK-4q-utn" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="23" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhh-nn-pcV" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="45.5" width="200" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulJ-9j-Dg8" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="68.5" width="200" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpU-3Y-da9" customClass="SpringLabel" customModule="SpringAnimation">
+                                        <rect key="frame" x="0.0" y="91.5" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LHd-Sf-74x"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9bM-0d-y0E" firstAttribute="top" secondItem="Qua-h7-jhJ" secondAttribute="top" constant="10" id="11a-9s-Sbp"/>
+                            <constraint firstItem="Qua-h7-jhJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="71m-2f-I5A"/>
+                            <constraint firstItem="Qua-h7-jhJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.643766" id="8II-lx-YQz"/>
+                            <constraint firstItem="zEj-Iy-RTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="UM5-Fm-Hwj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zEj-Iy-RTH" secondAttribute="bottom" constant="50" id="b7i-v5-520"/>
+                            <constraint firstItem="Qua-h7-jhJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAB-Mc-uAx"/>
+                            <constraint firstItem="Qua-h7-jhJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="m5O-tS-GlF"/>
+                            <constraint firstItem="9bM-0d-y0E" firstAttribute="height" secondItem="Qua-h7-jhJ" secondAttribute="height" multiplier="0.833962" id="mOy-VW-bo0"/>
+                            <constraint firstItem="zEj-Iy-RTH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgd-LL-kmP"/>
+                            <constraint firstItem="9bM-0d-y0E" firstAttribute="leading" secondItem="Qua-h7-jhJ" secondAttribute="leading" constant="20" id="rjj-G5-Vbw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationSpringView" destination="Qua-h7-jhJ" id="vP9-sC-KaP"/>
+                        <outlet property="stackInfoLabels" destination="9bM-0d-y0E" id="ExU-he-AgR"/>
+                        <outlet property="startButton" destination="zEj-Iy-RTH" id="mXM-gN-ZLP"/>
+                        <outletCollection property="infoAnimationLabels" destination="dB7-Ey-daE" collectionClass="NSMutableArray" id="hQz-V1-aRx"/>
+                        <outletCollection property="infoAnimationLabels" destination="nbK-4q-utn" collectionClass="NSMutableArray" id="UrV-4J-fDC"/>
+                        <outletCollection property="infoAnimationLabels" destination="zhh-nn-pcV" collectionClass="NSMutableArray" id="drv-d2-IWJ"/>
+                        <outletCollection property="infoAnimationLabels" destination="ulJ-9j-Dg8" collectionClass="NSMutableArray" id="nM7-hW-M15"/>
+                        <outletCollection property="infoAnimationLabels" destination="QpU-3Y-da9" collectionClass="NSMutableArray" id="Ubl-3z-Mjb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="-2.6785714285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
