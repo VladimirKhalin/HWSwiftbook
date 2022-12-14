@@ -4,11 +4,10 @@
 //
 //  Created by Vladimir Khalin on 14.12.2022.
 //
-import Foundation
 import UIKit
 import SpringAnimation
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     @IBOutlet var animationSpringView: SpringImageView!
     @IBOutlet var startButton: UIButton!
     @IBOutlet var infoAnimationLabels: [SpringLabel]!
@@ -18,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         animationSpringView.layer.cornerRadius = 20
         startButton.layer.cornerRadius = 20
         animationSpringView.addSubview(stackInfoLabels)
@@ -27,8 +25,7 @@ class ViewController: UIViewController {
         enterInfoToLabels()
     }
     
-    @IBAction func startAnimationButtonPresed(_ sender: SpringButton) {
-        
+    @IBAction func startAnimationButtonPr() {
         animationSpringView.animation = animation.preset
         animationSpringView.curve = animation.curve
         animationSpringView.force = animation.force
@@ -43,7 +40,6 @@ class ViewController: UIViewController {
     }
     
     private func makeAnimation() {
-        
         guard let preset = AnimationPreset.allCases.randomElement() else { return }
         guard let curve = AnimationCurve.allCases.randomElement() else {return }
         let force = isRandomDouble()
